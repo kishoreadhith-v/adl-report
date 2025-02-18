@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LinkedOut: Smart Link Management Platform"
+    />
+    <title>LinkedOut</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header id="main-header">
+        <h1><a href="home.html">LinkedOut</a></h1>
+        <p>Smart link management with AI-powered search</p>
+      </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Second Brain: A Resource Management Platform">
-    <title>Second Brain</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<frameset rows="20%,*" border="1">
-    <frame name="header" src="header.html" scrolling="no">
-        <frameset cols="25%,*" border="1">
-            <frame name="nav" src="nav.html" scrolling="no">
-                <frame name="content" src="home.html">
-        </frameset>
-</frameset>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="home.html" class="nav-link active">Home</a></li>
+          <li><a href="add-link.html" class="nav-link">Add Link</a></li>
+          <li><a href="categories.html" class="nav-link">Groups</a></li>
+          <li><a href="search.html" class="nav-link">Search</a></li>
+          <li><a href="share.html" class="nav-link">Share</a></li>
+          <li><a href="tutorial.html" class="nav-link">Docs</a></li>
+          <li><a href="register.html" class="nav-link">Register</a></li>
+        </ul>
+      </nav>
 
+      <main id="content">
+        <div class="loading-spinner" style="display: none">Loading...</div>
+        <div id="content-container" class="page-content"></div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>

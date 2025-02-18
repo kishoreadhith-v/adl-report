@@ -3,18 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resource Categories</title>
+    <title>Link Groups</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <section id="categories">
-      <h2>Resource Categories</h2>
-      <ul>
-        <li><a href="#">Work Documents</a></li>
-        <li><a href="#">Study Materials</a></li>
-        <li><a href="#">Personal Resources</a></li>
-      </ul>
-    </section>
+    <div class="page-content">
+      <section id="groups">
+        <h2>Browse Groups</h2>
+        <div class="bento-grid">
+          <div class="bento-item" data-group="learning-resources">
+            <div class="bento-content">
+              <span class="category-icon">📚</span>
+              <h3>Learning Resources</h3>
+              <p>Tutorials, courses, and educational content</p>
+              <span class="link-count">243 links</span>
+            </div>
+          </div>
+          <div class="bento-item" data-group="dev-tools">
+            <div class="bento-content">
+              <span class="category-icon">💻</span>
+              <h3>Dev Tools</h3>
+              <p>Programming utilities and development resources</p>
+              <span class="link-count">156 links</span>
+            </div>
+          </div>
+          <div class="bento-item" data-group="design-inspiration">
+            <div class="bento-content">
+              <span class="category-icon">🎨</span>
+              <h3>Design Inspiration</h3>
+              <p>UI/UX references and design resources</p>
+              <span class="link-count">189 links</span>
+            </div>
+          </div>
+          <div class="bento-item" data-group="data-science">
+            <div class="bento-content">
+              <span class="category-icon">📊</span>
+              <h3>Data Science</h3>
+              <p>ML, AI, and data analysis resources</p>
+              <span class="link-count">127 links</span>
+            </div>
+          </div>
+          <div class="bento-item" data-group="productivity">
+            <div class="bento-content">
+              <span class="category-icon">🛠️</span>
+              <h3>Productivity</h3>
+              <p>Tools and tips for better workflow</p>
+              <span class="link-count">95 links</span>
+            </div>
+          </div>
+          <div class="bento-item" data-group="mobile-development">
+            <div class="bento-content">
+              <span class="category-icon">📱</span>
+              <h3>Mobile Development</h3>
+              <p>iOS, Android, and cross-platform resources</p>
+              <span class="link-count">167 links</span>
+            </div>
+          </div>
+          <div class="bento-item" data-group="security">
+            <div class="bento-content">
+              <span class="category-icon">🔒</span>
+              <h3>Security</h3>
+              <p>Cybersecurity and privacy tools</p>
+              <span class="link-count">82 links</span>
+            </div>
+          </div>
+          <div class="bento-item" data-group="startup-resources">
+            <div class="bento-content">
+              <span class="category-icon">🚀</span>
+              <h3>Startup Resources</h3>
+              <p>Tools and guides for entrepreneurs</p>
+              <span class="link-count">134 links</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="categories.js"></script>
   </body>
 </html>
