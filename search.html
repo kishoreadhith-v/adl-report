@@ -1,27 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Resources</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Resources - Second Brain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header id="main-header">
+            <h1><a href="home.html">Second Brain</a></h1>
+            <p>Your personal knowledge management hub</p>
+        </header>
 
-  <body>
-    <div class="page-content">
-      <section id="search">
-        <h2>Search Resources</h2>
-        <form>
-          <label for="search-query">Search:</label>
-          <input
-            type="text"
-            id="search-query"
-            name="query"
-            placeholder="Enter keywords"
-          />
-          <button type="submit">Search</button>
-        </form>
-      </section>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="upload.html" class="nav-link">Add Resource</a></li>
+                <li><a href="categories.html" class="nav-link">Categories</a></li>
+                <li><a href="search.html" class="nav-link active">Search</a></li>
+                <li><a href="share.html" class="nav-link">Share</a></li>
+                <li><a href="tutorial.html" class="nav-link">Tutorial</a></li>
+                <li><a href="register.html" class="nav-link">Register</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="page-content animate-fade-in">
+                <section id="search" class="content-card glass-dark">
+                    <h2>Search Resources</h2>
+                    <form>
+                        <label for="search-query">Search:</label>
+                        <input
+                            type="text"
+                            id="search-query"
+                            name="query"
+                            placeholder="Enter keywords"
+                        />
+                        <button type="submit">Search</button>
+                    </form>
+                </section>
+            </div>
+        </main>
     </div>
-  </body>
+</body>
 </html>

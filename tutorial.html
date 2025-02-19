@@ -1,27 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en" data-theme="dark">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tutorial Video</title>
+    <title>Tutorial Video - Second Brain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
-  </head>
+</head>
+<body>
+    <div class="app-container">
+        <header id="main-header">
+            <h1><a href="home.html">Second Brain</a></h1>
+            <p>Your personal knowledge management hub</p>
+        </header>
 
-  <body>
-    <div class="page-content">
-      <section id="tutorial">
-        <h2>Watch tutorial</h2>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/JWevucmJ2hg"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        >
-        </iframe>
-      </section>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="add-link.html" class="nav-link">Add Link</a></li>
+                <li><a href="categories.html" class="nav-link">Groups</a></li>
+                <li><a href="search.html" class="nav-link">Search</a></li>
+                <li><a href="share.html" class="nav-link">Share</a></li>
+                <li><a href="tutorial.html" class="nav-link active">Documentation</a></li>
+                <li><a href="register.html" class="nav-link">Register</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="page-content animate-fade-in">
+                <!-- Getting Started Guide -->
+                <section id="getting-started" class="content-card glass-dark">
+                    <header class="section-header">
+                        <h2 class="gradient-text">Getting Started with Second Brain</h2>
+                        <p class="section-subtitle">Your complete guide to resource management</p>
+                    </header>
+
+                    <div class="docs-container">
+                        <div class="feature-guide">
+                            <h3>Key Features</h3>
+                            <ul class="feature-list">
+                                <li>
+                                    <span class="feature-icon">🔍</span>
+                                    <div class="feature-detail">
+                                        <h4>Smart Search</h4>
+                                        <p>Find resources using natural language. Search through content, titles, and tags.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="feature-icon">🏷️</span>
+                                    <div class="feature-detail">
+                                        <h4>Auto-Categorization</h4>
+                                        <p>AI automatically categorizes your content into relevant groups.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="feature-icon">🔄</span>
+                                    <div class="feature-detail">
+                                        <h4>Content Sync</h4>
+                                        <p>Your resources stay synchronized across all your devices.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="usage-guide">
+                            <h3>How to Use</h3>
+                            <div class="steps-container">
+                                <div class="step">
+                                    <div class="step-number">1</div>
+                                    <h4>Create Your Account</h4>
+                                    <p>Register to start organizing your resources. Click the "Register" button in the navigation.</p>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <h4>Add Your First Resource</h4>
+                                    <p>Click "Add Link" to save a URL or upload a file. The system will automatically analyze and categorize it.</p>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">3</div>
+                                    <h4>Organize & Browse</h4>
+                                    <p>Visit "Groups" to see your organized resources. Use tags and categories for better organization.</p>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">4</div>
+                                    <h4>Search & Share</h4>
+                                    <p>Use the search feature to find resources. Create collections to share with others.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Video Tutorial Section -->
+                <section id="tutorial-video" class="content-card glass-dark">
+                    <header class="section-header">
+                        <h2 class="gradient-text">Getting Started Tutorial</h2>
+                        <p class="section-subtitle">Learn how to use Second Brain effectively</p>
+                    </header>
+
+                    <div class="video-section">
+                        <div class="video-container">
+                            <iframe
+                                src="https://www.youtube.com/embed/JWevucmJ2hg"
+                                title="Second Brain Tutorial"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-chapters">
+                        <h3>Tutorial Chapters</h3>
+                        <ul class="chapter-list">
+                            <li>
+                                <span class="chapter-time">0:00</span>
+                                <span class="chapter-title">Introduction</span>
+                            </li>
+                            <li>
+                                <span class="chapter-time">1:30</span>
+                                <span class="chapter-title">Setting Up Your Account</span>
+                            </li>
+                            <li>
+                                <span class="chapter-time">3:45</span>
+                                <span class="chapter-title">Adding Your First Resource</span>
+                            </li>
+                            <li>
+                                <span class="chapter-time">5:20</span>
+                                <span class="chapter-title">Organizing Content</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <footer class="tutorial-footer">
+                        <div class="tutorial-nav">
+                            <a href="register.html" class="gradient-button">
+                                <span>Start Using Second Brain</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="help-text">
+                            <p>Need additional help? <a href="support.html">Contact Support</a></p>
+                        </div>
+                    </footer>
+                </section>
+
+                <!-- FAQ Section -->
+                <section id="faq" class="content-card glass-dark">
+                    <h3 class="gradient-text">Frequently Asked Questions</h3>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h4>What types of resources can I save?</h4>
+                            <p>URLs, documents (PDF, DOC), images, and more. The system automatically processes and indexes the content.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>How does auto-categorization work?</h4>
+                            <p>Our AI analyzes content and metadata to automatically assign relevant categories and tags.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Can I collaborate with others?</h4>
+                            <p>Yes! Create shared collections and invite others to contribute or view your resources.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
     </div>
-  </body>
+</body>
 </html>

@@ -1,36 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
-    <link rel="stylesheet" href="styles.css" />
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Second Brain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <script src="validation.js" defer></script>
-  </head>
+</head>
+<body>
+    <div class="app-container">
+        <header id="main-header">
+            <h1><a href="home.html">Second Brain</a></h1>
+            <p>Your personal knowledge management hub</p>
+        </header>
 
-  <body>
-    <div class="page-content">
-      <section id="register">
-        <h2>Register</h2>
-        <form id="registrationForm">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <small class="error" id="nameError"></small>
-          <br />
+        <nav id="main-nav">
+            <ul>
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="upload.html" class="nav-link">Add Resource</a></li>
+                <li><a href="categories.html" class="nav-link">Categories</a></li>
+                <li><a href="search.html" class="nav-link">Search</a></li>
+                <li><a href="share.html" class="nav-link">Share</a></li>
+                <li><a href="tutorial.html" class="nav-link">Tutorial</a></li>
+                <li><a href="register.html" class="nav-link active">Register</a></li>
+            </ul>
+        </nav>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <small class="error" id="emailError"></small>
-          <br />
+        <main>
+            <div class="page-content animate-fade-in">
+                <section id="register" class="content-card glass-dark">
+                    <h2>Register</h2>
+                    <form id="registrationForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+                        <small class="error" id="nameError"></small>
+                        <br />
 
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required />
-          <small class="error" id="passwordError"></small>
-          <br />
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                        <small class="error" id="emailError"></small>
+                        <br />
 
-          <button type="submit">Register</button>
-        </form>
-      </section>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required />
+                        <small class="error" id="passwordError"></small>
+                        <br />
+
+                        <button type="submit">Register</button>
+                    </form>
+                </section>
+            </div>
+        </main>
     </div>
-  </body>
+</body>
 </html>

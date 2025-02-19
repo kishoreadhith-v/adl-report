@@ -1,43 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Share Collections - LinkedOut</title>
+    <title>Share Collections - Second Brain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <div class="page-content">
-      <section id="share">
-        <h2>Share Your Link Collection</h2>
-        <form>
-          <label for="share-title">Collection Name:</label>
-          <input
-            type="text"
-            id="share-title"
-            name="share-title"
-            placeholder="e.g., 'Best Web Development Resources'"
-          />
-          <br />
-          <label for="share-links">Add Links:</label>
-          <textarea
-            id="share-links"
-            name="share-links"
-            rows="5"
-            cols="50"
-            placeholder="Paste your links here, one per line..."
-          ></textarea>
-          <br />
-          <div class="form-group">
-            <label>
-              <input type="checkbox" name="auto-categorize" checked />
-              Auto-categorize links
-            </label>
-          </div>
-          <button type="submit">Create Collection</button>
-        </form>
-      </section>
+    <div class="app-container">
+      <header id="main-header">
+        <h1><a href="home.html">Second Brain</a></h1>
+        <p>Your personal knowledge management hub</p>
+      </header>
+
+      <nav id="main-nav">
+        <ul>
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="upload.html" class="nav-link">Add Resource</a></li>
+          <li><a href="categories.html" class="nav-link">Categories</a></li>
+          <li><a href="search.html" class="nav-link">Search</a></li>
+          <li><a href="share.html" class="nav-link active">Share</a></li>
+          <li><a href="tutorial.html" class="nav-link">Tutorial</a></li>
+          <li><a href="register.html" class="nav-link">Register</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <div class="page-content animate-fade-in">
+          <section id="share" class="content-card glass-dark">
+            <h2>Share Your Link Collection</h2>
+            <form>
+              <label for="share-title">Collection Name:</label>
+              <input
+                type="text"
+                id="share-title"
+                name="share-title"
+                placeholder="e.g., 'Best Web Development Resources'"
+              />
+              <br />
+              <label for="share-links">Add Links:</label>
+              <textarea
+                id="share-links"
+                name="share-links"
+                rows="5"
+                cols="50"
+                placeholder="Paste your links here, one per line..."
+              ></textarea>
+              <br />
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" name="auto-categorize" checked />
+                  Auto-categorize links
+                </label>
+              </div>
+              <button type="submit">Create Collection</button>
+            </form>
+          </section>
+        </div>
+      </main>
     </div>
   </body>
 </html>
